@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>line_detect</name>
+  <version>0.0.0</version>
+  <description>The line_detect package</description>
+
+  <maintainer email="hangzhao@mit.edu">Hang Zhao</maintainer>
+  <maintainer email="syliu@mit.edu">Shih-Yuan Liu</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>turtlebot3_auto_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>cv_bridge</build_depend>
+
+  <run_depend>turtlebot3_auto_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>cv_bridge</run_depend>
+
+
+  <export> </export>
+</package>

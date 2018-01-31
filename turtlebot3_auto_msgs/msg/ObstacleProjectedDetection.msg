@@ -1,0 +1,3 @@
+geometry_msgs/Point location
+turtlebot3_auto_msgs/ObstacleType type
+float32 distance

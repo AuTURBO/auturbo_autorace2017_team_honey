@@ -1,0 +1,5 @@
+<launch>
+    <node name="lane_filter_node" pkg="lane_filter" type="lane_filter_node.py" output="screen" clear_params="true" required="true">
+        <rosparam command="load" file="$(find lane_filter)/config/baseline/lane_filter/lane_filter_node/default.yaml"/>
+    </node>
+</launch>

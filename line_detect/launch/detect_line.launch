@@ -1,0 +1,13 @@
+<launch>
+
+    <node name="detect_line" pkg="line_detect" type="detect_line.py" output="screen" clear_params="true" required="true">
+        <rosparam command="load" file="$(find line_detect)/config/universal_HSV.yaml"/>
+        <param name="verbose" value="true"/>
+    </node>
+
+    <!--<node name="detect_parking_line" pkg="line_detect" type="detect_parking_line.py" output="screen" clear_params="true" required="true">
+        <rosparam command="load" file="$(find line_detect)/config/universal_parking.yaml"/>
+        <param name="verbose" value="true"/>
+    </node>-->
+
+</launch>
