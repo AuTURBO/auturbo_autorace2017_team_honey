@@ -78,8 +78,9 @@ These packages can be launched by following commands
   ```bash
   turtlebot3_auto/line_detect/src/detect_line.py 
   ->  with open("/home/rt/catkin_ws/src/turtlebot3_auto/line_detect/src/callibra_ros.yaml")
+  ```bash
   Please tuning the camera cal value(callibra_ros.yaml) to fit your airframe
-  ```bash   
+     
       
 * Line color HSV value tunning point
   ```bash
