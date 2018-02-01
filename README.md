@@ -72,17 +72,24 @@ These packages can be launched by following commands
   ```bash
   $ roslaunch motor_control motor_controller_node.launch
 
-# 다운로드 받고 실행 할때 아래 파일 경로를 자신의 폴더 위치에 맞게 변경하세요 
-  -> turtlebot3_auto/line_detect/src/detect_line.py  파일의 아래 부분 
-      with open("/home/rt/catkin_ws/src/turtlebot3_auto/line_detect/src/callibra_ros.yaml")
-     어차피  기체가 바뀌면 cal 값  그대로 사용하지 못합니다.  
-# 광원이 변경이 되면 해당 위치에서 라인에 맞는  HSV 값을 변경해 필요,( 주요 TUNNING POINT )
+# Caution
+ 
+* When downloading and running, change the following file path to match your folder location
+  ```bash
+  turtlebot3_auto/line_detect/src/detect_line.py 
+  ->  with open("/home/rt/catkin_ws/src/turtlebot3_auto/line_detect/src/callibra_ros.yaml")
+  Please tuning the camera cal value(callibra_ros.yaml) to fit your airframe
+  ```bash   
+      
+* Line color HSV value tunning point
+  ```bash
   -> turtlebot3_auto/line_detect/config/universal_HSV.yaml
       hsv_yellow1: [10,70,100] #[25,70,100]#[25,100,120]#[25,50,90] 
       hsv_yellow2: [55,255,255] #[45,255,255]
+  ```bash
 
-# 현재 파킹 막아 놨습니다. 라인, 터널 만 됩니다.
-  터널모드 는 그냥 장애물 피하기만 함.
+* Not yet support parking tunnel, Now only support line 
+  
 
 # Tool
 
